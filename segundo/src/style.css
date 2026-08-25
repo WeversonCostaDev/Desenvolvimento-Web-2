@@ -15,7 +15,7 @@ body{
 }
 
 #header{
-  background-color: rgb(6, 28, 28);
+  background-color: rgb(26, 23, 23);
   grid-area: header;
 }
 
@@ -105,7 +105,51 @@ nav.menu a.destaque{
   font-size: bold;
 }
 
-.banner img{
+.carrossel-container{
+  position: relative;
+}
+.carrossel{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carrossel picture{
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+
+.carrossel picture>img{
   width: 100%;
-  width: 100%;
+  display: block;
+
+  
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  
+  
+}
+.slider-nav a{
+  display: block;
+  width: 20px;
+  height: .2rem;
+  opacity: .75;
+  transition: opacity ease 250ms;
+  background-color: #fff;
+}
+
+.slider-nav a:hover{
+  opacity: 1;
 }

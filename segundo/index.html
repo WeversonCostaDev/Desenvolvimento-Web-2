@@ -26,7 +26,7 @@
           <form action="">
             <input type="search" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
             <button type="submit">
-              <img width="25px" src="./public/img/lupa.svg" alt="">
+              <img width="25px" src="/img/lupa.svg" alt="">
             </button>
           </form>
 
@@ -49,15 +49,41 @@
       </header>
 
       <main id="main">
-        <section class="banner">
-          <picture>
-            <source media="(max-width: 990px)" srcset="./public/img/banner-3-mobile.webp">
-            <img src="./public/img/banner-3.jpg" alt="">
-          </picture>
 
+        <section>
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <picture id="slide-1">
+                <source media="(max-width: 990px)" srcset="/img/banner-1-mobile.jpg">
+                <img src="/img/banner-1.webp" alt="">
+              </picture>
+              <picture id="slide-2">
+                <source media="(max-width: 990px)" srcset="/img/banner-2-mobile.jpg">
+                <img src="/img/banner-2.jpg" alt="">
+              </picture>
+              <picture id="slide-3">
+                <source media="(max-width: 990px)" srcset="/img/banner-3-mobile.webp">
+                <img src="/img/banner-3.jpg" alt="">
+              </picture>
+              <picture id="slide-4">
+                <source media="(max-width: 990px)" srcset="/img/banner-4-mobile.webp">
+                <img src="/img/banner-4.jpg" alt="">
+              </picture>
+            </div>
+
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+
+          </div>
         </section>
+
         <section>Galeria</section>
         <section>Conteudo</section>
+
       </main>
       <footer id="footer">Footer</footer>
     </div>
