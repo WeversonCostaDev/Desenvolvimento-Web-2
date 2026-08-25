@@ -16,18 +16,46 @@
 
     <div class="container">
       <header id="header">
-        <div>
+        <div class="anuncio">
+          <p>Primeira compra? Use o cupom PRIMEIRACOMPRA5</p>
+        </div>
+
+        <div id="faixa">
           <img src="/img/darkside-logo.svg" alt="darkside-logo">
-          <form action="#">
-            <input id="pesquisa" type="search" name="pesquisa" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
-            <button id="button" type="submit">
-              <img src="/img/lupa.svg" alt="">
+
+          <form action="">
+            <input type="search" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
+            <button type="submit">
+              <img width="25px" src="./public/img/lupa.svg" alt="">
             </button>
           </form>
+
         </div>
+        
+        <nav class="menu">
+
+          <a href="">Livros</a>
+          <a href="">Marcas</a>
+          <a href="">DarkPaper</a>
+          <a class="destaque" href="">Promoções</a>
+          <a href="">Tarot & Oráculos</a>
+          <a href="">Box e Coleções</a>
+          <a href="">Raridades</a>
+          <a href="">Sobre</a>
+          <a href="">Contato</a>
+
+        </nav>
+          
       </header>
+
       <main id="main">
-        <section>Hero</section>
+        <section class="banner">
+          <picture>
+            <source media="(max-width: 990px)" srcset="./public/img/banner-3-mobile.webp">
+            <img src="./public/img/banner-3.jpg" alt="">
+          </picture>
+
+        </section>
         <section>Galeria</section>
         <section>Conteudo</section>
       </main>
