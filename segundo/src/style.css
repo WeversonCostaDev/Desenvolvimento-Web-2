@@ -56,6 +56,7 @@ body{
 #main{
   background-color: blueviolet;
   grid-area: main;
+  
 }
 
 #footer{
@@ -124,9 +125,9 @@ nav.menu a.destaque{
   flex: 0 0 100%;
 }
 
-/*.carrossel::-webkit-scrollbar{
+.carrossel::-webkit-scrollbar{
   display: none;
-}*/
+}
 .carrossel picture img{
   scroll-behavior: smooth;
   scroll-snap-align: start;
@@ -158,4 +159,12 @@ nav.menu a.destaque{
 
 .slider-nav a:hover{
   opacity: 1;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 20px;
+  
 }
