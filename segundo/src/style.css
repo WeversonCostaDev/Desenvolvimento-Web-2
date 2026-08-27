@@ -178,6 +178,7 @@ nav.menu a.destaque{
 .conteudo-principal{
   max-width: 1405px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .titulo{
@@ -275,7 +276,7 @@ nav.menu a.destaque{
   display: none;
 }
 
-@media(max-width: 648px){
+@media(max-width: 990px){
   .mimo-container{
     display: flex;
     overflow-x: auto;
@@ -286,6 +287,7 @@ nav.menu a.destaque{
   .mimo-container>div{
     flex: 0 0 50%;
     scroll-snap-align: start;
+    
   }
 
   .mimo-container img{
@@ -303,10 +305,11 @@ nav.menu a.destaque{
   transform: translateX(-50%);
   bottom: 30px;
   
+  }
   #mimo-6{
     display: block;
   }
-}
+
 }
 
 .gif{
