@@ -1,217 +1,220 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/style.css">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>segundo</title>
-  </head>
-  <body>
-    <div id="app"></div>
+  <link rel="stylesheet" href="./src/style.css">
 
-    <script type="module" src="/src/main.js"></script>
+  <title>segundo</title>
+</head>
 
-    <div class="container">
-      <header id="header">
-        <div class="anuncio">
-          <p>Primeira compra? Use o cupom PRIMEIRACOMPRA5</p>
+<body>
+  <div id="app"></div>
+
+  <script type="module" src="/src/main.js"></script>
+
+  <div class="container">
+    <header id="header">
+      <div class="anuncio">
+        <p>Primeira compra? Use o cupom PRIMEIRACOMPRA5</p>
+      </div>
+
+      <div id="faixa">
+        <img src="/img/darkside-logo.svg" alt="darkside-logo">
+
+        <form action="">
+          <input type="search" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
+          <button type="submit">
+            <img width="25px" src="/img/lupa.svg" alt="">
+          </button>
+        </form>
+
+      </div>
+
+      <nav class="menu">
+
+        <a href="">Livros</a>
+        <a href="">Marcas</a>
+        <a href="">DarkPaper</a>
+        <a class="destaque" href="">Promoções</a>
+        <a href="">Tarot & Oráculos</a>
+        <a href="">Box e Coleções</a>
+        <a href="">Raridades</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+
+      </nav>
+
+    </header>
+
+    <main id="main">
+
+      <section>
+        <div class="carrossel-container">
+          <div class="carrossel">
+            <picture id="slide-1">
+              <source media="(max-width: 990px)" srcset="/img/banner-1-mobile.jpg">
+              <img src="/img/banner-1.webp" alt="">
+            </picture>
+            <picture id="slide-2">
+              <source media="(max-width: 990px)" srcset="/img/banner-2-mobile.jpg">
+              <img src="/img/banner-2.jpg" alt="">
+            </picture>
+            <picture id="slide-3">
+              <source media="(max-width: 990px)" srcset="/img/banner-3-mobile.webp">
+              <img src="/img/banner-3.jpg" alt="">
+            </picture>
+            <picture id="slide-4">
+              <source media="(max-width: 990px)" srcset="/img/banner-4-mobile.webp">
+              <img src="/img/banner-4.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="slider-nav">
+            <a class="slider-link" href="#slide-1"></a>
+            <a class="slider-link" href="#slide-2"></a>
+            <a class="slider-link" href="#slide-3"></a>
+            <a class="slider-link" href="#slide-4"></a>
+          </div>
         </div>
+      </section>
 
-        <div id="faixa">
-          <img src="/img/darkside-logo.svg" alt="darkside-logo">
-
-          <form action="">
-            <input type="search" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
-            <button type="submit">
-              <img width="25px" src="/img/lupa.svg" alt="">
-            </button>
-          </form>
-
-        </div>
-        
-        <nav class="menu">
-
-          <a href="">Livros</a>
-          <a href="">Marcas</a>
-          <a href="">DarkPaper</a>
-          <a class="destaque" href="">Promoções</a>
-          <a href="">Tarot & Oráculos</a>
-          <a href="">Box e Coleções</a>
-          <a href="">Raridades</a>
-          <a href="">Sobre</a>
-          <a href="">Contato</a>
-
-        </nav>
-          
-      </header>
-
-      <main id="main">
-        
+      <div class="conteudo-principal">
         <section>
-          <div class="carrossel-container">
-            <div class="carrossel">
-              <picture id="slide-1">
-                <source media="(max-width: 990px)" srcset="/img/banner-1-mobile.jpg">
-                <img src="/img/banner-1.webp" alt="">
-              </picture>
-              <picture id="slide-2">
-                <source media="(max-width: 990px)" srcset="/img/banner-2-mobile.jpg">
-                <img src="/img/banner-2.jpg" alt="">
-              </picture>
-              <picture id="slide-3">
-                <source media="(max-width: 990px)" srcset="/img/banner-3-mobile.webp">
-                <img src="/img/banner-3.jpg" alt="">
-              </picture>
-              <picture id="slide-4">
-                <source media="(max-width: 990px)" srcset="/img/banner-4-mobile.webp">
-                <img src="/img/banner-4.jpg" alt="">
-              </picture>
-            </div>
 
-            <div class="slider-nav">
-              <a class="slider-link" href="#slide-1"></a>
-              <a class="slider-link" href="#slide-2"></a>
-              <a class="slider-link" href="#slide-3"></a>
-              <a class="slider-link" href="#slide-4"></a>
+          <h1 class="titulo">Lançamentos</h1>
+
+          <div class="card-container">
+            <div class="card">
+              <img src="/img/shigahime_vol_2_mini_capa.png" alt="">
+              <div id="autor">Hirohisa Sato</div>
+              <a href="">Shigahime Vol.2 + Brindes Exclusivos</a>
+            </div>
+            <div class="card">
+              <img src="/img/exorcista_slime_thmbnail.png" alt="">
+              <div id="autor">Mark Kermode</div>
+              <a href="">O Exorcista: Segredos e Devoção – Slime Edition + Brindes Exclusivos</a>
+            </div>
+            <div class="card">
+              <img src="/img/a_odisseia_MINI_capa.png" alt="">
+              <div id="autor">Gareth Hinds</div>
+              <a href="">A Odisseia + Brindes Exclusivos</a>
+            </div>
+            <div class="card">
+              <img src="/img/a_cordeirinha_loja_MINI_capa.png" alt="">
+              <div id="autor">Lucy Rose</div>
+              <a href="">A Cordeirinha + Brinde Exclusivo</a>
+            </div>
+            <div class="card">
+              <img src="/img/irmao_MINI_capa.png" alt="">
+              <div id="autor">Ania Ahlborn</div>
+              <a href="">Irmã(o) + Brindes Exclusivos</a>
+            </div>
+            <div class="card">
+              <img src="/img/labirinto_do_fauno_MINI_capa.png" alt="">
+              <div id="autor">Mar Diestro-Dópido</div>
+              <a href="">Lábirinto do Fauno: Alquimia das Sombras + Brindes Exclusivos</a>
             </div>
           </div>
+
         </section>
 
-        <div class="conteudo-principal">
-          <section>
-            
-            <h1 class="titulo">Lançamentos</h1>
-          
-            <div class="card-container">
-              <div class="card">
-                <img src="/img/shigahime_vol_2_mini_capa.png" alt="">
-                <div id="autor">Hirohisa Sato</div>
-                <a href="">Shigahime Vol.2 + Brindes Exclusivos</a>
+        <section>
+
+          <h1 class="titulo">Mimos exclusivos</h1>
+          <div class="carrossel-container">
+            <div class="mimo-container">
+              <div id="mimo-1">
+                <picture>
+                  <source media="(max-width: 990px)" srcset="/img/parasite-eve-mobile.webp">
+                  <img src="/img/O-exoscista-mimo-desktop.webp" alt="">
+                </picture>
               </div>
-              <div class="card">
-                <img src="/img/exorcista_slime_thmbnail.png" alt="">
-                <div id="autor">Mark Kermode</div>
-                <a href="">O Exorcista: Segredos e Devoção – Slime Edition + Brindes Exclusivos</a>
+              <div id="mimo-2">
+                <picture>
+                  <source media="(max-width:990px)" srcset="/img/o-jardim-da-bruxa-natural-mobile.webp">
+                  <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
+                </picture>
               </div>
-              <div class="card">
-                <img src="/img/a_odisseia_MINI_capa.png" alt="">
-                <div id="autor">Gareth Hinds</div>
-                <a href="">A Odisseia + Brindes Exclusivos</a>
+              <div id="mimo-3">
+                <picture>
+                  <source media="(max-width:990px)" srcset="/img/panico-mobile.jpg">
+                  <img src="/img/psicopata-vitoriana-desktop.webp" alt="">
+                </picture>
               </div>
-              <div class="card">
-                <img src="/img/a_cordeirinha_loja_MINI_capa.png" alt="">
-                <div id="autor">Lucy Rose</div>
-                <a href="">A Cordeirinha + Brinde Exclusivo</a>
+              <div id="mimo-4">
+                <picture>
+                  <source media="(max-width:990px)" srcset="/img/psicopata-vitoriana-desktop.webp">
+                  <img src="/img/corra-ou-morra-desktop.webp" alt="">
+                </picture>
               </div>
-              <div class="card">
-                <img src="/img/irmao_MINI_capa.png" alt="">
-                <div id="autor">Ania Ahlborn</div>
-                <a href="">Irmã(o) + Brindes Exclusivos</a>
+              <div id="mimo-5">
+                <picture>
+                  <source media="(max-width:990px)" srcset="/img/banner-3-mobile.webp">
+                  <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
+                </picture>
               </div>
-              <div class="card">
-                <img src="/img/labirinto_do_fauno_MINI_capa.png" alt="">
-                <div id="autor">Mar Diestro-Dópido</div>
-                <a href="">Lábirinto do Fauno: Alquimia das Sombras + Brindes Exclusivos</a>
+              <div id="mimo-6">
+                <picture>
+                  <source media="(max-width:990px)" srcset="/img/banner-4-mobile.webp">
+                  <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
+                </picture>
               </div>
             </div>
-            
-          </section>
-
-          <section>
-
-            <h1 class="titulo">Mimos exclusivos</h1>
-            <div class="carrossel-container">
-              <div class="mimo-container">
-                <div id="mimo-1">
-                  <picture>
-                    <source media="(max-width: 990px)" srcset="/img/parasite-eve-mobile.webp">
-                    <img src="/img/O-exoscista-mimo-desktop.webp" alt="">
-                  </picture>
-                </div>
-                <div id="mimo-2">
-                  <picture>
-                    <source media="(max-width:990px)" srcset="/img/o-jardim-da-bruxa-natural-mobile.webp">
-                    <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
-                  </picture>
-                </div>
-                <div id="mimo-3">
-                  <picture>
-                    <source media="(max-width:990px)" srcset="/img/panico-mobile.jpg">
-                    <img src="/img/psicopata-vitoriana-desktop.webp" alt="">
-                  </picture>
-                </div>
-                <div id="mimo-4">
-                  <picture>
-                    <source media="(max-width:990px)" srcset="/img/psicopata-vitoriana-desktop.webp">
-                    <img src="/img/corra-ou-morra-desktop.webp" alt="">
-                  </picture>
-                </div>
-                <div id="mimo-5">
-                  <picture >
-                    <source  media="(max-width:990px)" srcset="/img/banner-3-mobile.webp">
-                    <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
-                  </picture>
-                </div>
-                <div id="mimo-6">
-                  <picture>
-                    <source  media="(max-width:990px)" srcset="/img/banner-4-mobile.webp">
-                    <img src="/img/nunca-assobie-a-noite-desktop.webp" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="mimo-nav">
-                <a class="slider-link" href="#mimo-1"></a>
-                <a class="slider-link" href="#mimo-4"></a>
-                <a class="slider-link" href="#mimo-6"></a>
-              </div>
+            <div class="mimo-nav">
+              <a class="slider-link" href="#mimo-1"></a>
+              <a class="slider-link" href="#mimo-4"></a>
+              <a class="slider-link" href="#mimo-6"></a>
             </div>
-            
-          </section>
+          </div>
+
+        </section>
 
         <div>
-        
-        <img class="imagem-app" src="/img/imagem-app.webp" alt="">
-      </main>
-      <footer id="footer">
-        <hr>
-        <div class="conteudo-principal rodape">
-          <img src="/img/neon_darkside_central.gif" alt="">
-          <div>
-            <h4 class="titulo">Privacidade e Termos</h4>
-            <ul>
-              <li>Política de Pagamento</li>
-              <li>Política de Privacidade</li>
-              <li>Política de Brindes Promocionais</li>
-              <li>Trocas e Devoluções</li>
-              <li>Regulamento de Cashback</li>
-              <li>Encontre o seu Pedido</li>
-            </ul>
-          </div>
 
-          <div>
-            <h4 class="titulo">Mapa do site</h4>
-            <ul>
-              <li>Editora</li>
-              <li>Livros</li>
-              <li>DarkBlog</li>
-              
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="titulo">Informações</h4>
-            <ul>
-              <li>Professores</li>
-              <li>Parceiros</li>
-            </ul>
-          </div>
-
+          <img class="imagem-app" src="/img/imagem-app.webp" alt="">
+    </main>
+    <footer id="footer">
+      <hr>
+      <div class="conteudo-principal rodape">
+        <img src="/img/neon_darkside_central.gif" alt="">
+        <div>
+          <h4 class="titulo">Privacidade e Termos</h4>
+          <ul>
+            <li>Política de Pagamento</li>
+            <li>Política de Privacidade</li>
+            <li>Política de Brindes Promocionais</li>
+            <li>Trocas e Devoluções</li>
+            <li>Regulamento de Cashback</li>
+            <li>Encontre o seu Pedido</li>
+          </ul>
         </div>
-      </footer>
-    </div>
 
-  </body>
+        <div>
+          <h4 class="titulo">Mapa do site</h4>
+          <ul>
+            <li>Editora</li>
+            <li>Livros</li>
+            <li>DarkBlog</li>
+
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="titulo">Informações</h4>
+          <ul>
+            <li>Professores</li>
+            <li>Parceiros</li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+</body>
+
 </html>
