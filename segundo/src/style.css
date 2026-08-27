@@ -60,7 +60,7 @@ body{
 }
 
 #footer{
-  background-color: coral;
+  background-color: black;
   grid-area: footer;
 }
 
@@ -177,13 +177,13 @@ nav.menu a.destaque{
 
 .conteudo-principal{
   max-width: 1405px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 10px;
 }
 
 .titulo{
   color: #fff;
-  margin-top: 70px;
+  font-weight: bold;
 }
 
 .card-container{
@@ -316,4 +316,35 @@ nav.menu a.destaque{
   width: 250px;
 }
 
+.conteudo-principal img.imagem-app{
+  width: 100%;
+  margin: 30px auto;
+  display: block;
+}
 
+#footer ul{
+  list-style: none;
+  color: #888888;
+  gap: 10px;
+  font-size: 0.9em;
+  padding: 0px;
+}
+
+#footer ul li{
+  
+  margin: 8px 0px;
+}
+
+.rodape{
+  display: flex;
+  gap:70px;
+}
+
+div.rodape>img{
+  width: 250px;
+}
+
+#footer > hr {
+  border: none;
+  border-top: 1px solid rgb(26, 23, 23);
+}
