@@ -186,9 +186,9 @@ nav.menu a.destaque {
 }
 
 .conteudo-principal {
-  max-width: 1405px;
+  max-width: 1200px;
   margin: 40px auto;
-  padding: 10px;
+  
 }
 
 .titulo {
@@ -348,14 +348,11 @@ nav.menu a.destaque {
   margin: 8px 0px;
 }
 
-.rodape {
+.listas-rodape {
   display: flex;
   gap: 70px;
 }
 
-div.rodape>img {
-  width: 250px;
-}
 
 #footer>hr {
   border: none;
@@ -363,10 +360,10 @@ div.rodape>img {
 }
 
 @media(max-width:990px) {
-  .rodape {
+  .listas-rodape {
     flex-direction: column;
     gap: 20px 10px;
-    align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -376,3 +373,88 @@ div.rodape>img {
   }
 }
 
+.gif{
+  max-width: 300px;
+}
+
+@media(max-width:990px){
+  .gif{
+    display: block;
+  margin: 0 auto;
+  }
+}
+.borda{
+  border: 1px solid yellow;
+}
+
+.rodape{
+  display: flex;
+  gap: 50px;
+
+}
+
+@media(max-width:990px){
+  .rodape{
+    flex-direction: column;
+  }
+}
+
+.linha{
+  border-color: #888888;
+}
+
+/*Sobre.html*/
+
+.conteudo-sobre{
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.linha-editorial{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.card-linha-editorial>p{
+  line-height: 1.6;
+}
+.card-linha-editorial>h3{
+  color: #fff;
+  font-size: 1.9em;
+}
+
+.card-linha-editorial h2{
+  color: rgb(229, 4, 4);
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.card-linha-editorial h1{
+  color: white;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+.card-linha-editorial img{
+  display: block;
+}
+.branco{color:#fff}
+
+#marca-destaque{
+  padding: 10px 20px;
+  background-color:  rgb(229, 4, 4);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.link{
+  color:  rgb(229, 4, 4);
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
