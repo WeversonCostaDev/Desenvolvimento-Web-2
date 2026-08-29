@@ -96,7 +96,7 @@ nav.menu a.destaque {
 }
 
 #letreiro-container{
-  background-color: red;
+  background: rgb(180, 4, 4);
 }
 
 #letreiro-container>div{
@@ -375,6 +375,13 @@ nav.menu a.destaque {
   gap: 70px;
 }
 
+div.listas-rodape a{
+  text-decoration: none;
+  color: #888888;
+}
+div.listas-rodape a:hover{
+  color:rgb(180, 4, 4);
+}
 
 #footer>hr {
   border: none;
@@ -422,6 +429,8 @@ nav.menu a.destaque {
   border:none;
   border-top: 1px solid #888888;
 }
+
+
 
 /*Sobre.html*/
 
