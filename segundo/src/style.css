@@ -95,18 +95,40 @@ nav.menu a.destaque {
   color: rgb(255, 210, 29);
 }
 
-.anuncio {
-  background-color: rgb(180, 4, 4);
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#letreiro-container{
+  background-color: red;
 }
 
-.anuncio p {
-  margin: 0px;
+#letreiro-container>div{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-y:auto;
+
+}
+
+#letreiro-container>div::-webkit-scrollbar{
+  display: none;
+}
+
+#letreiro-container>div .letreiro{
+  display: flex;
+  flex-wrap: nowrap;
+  animation: spin 10s infinite linear;
+  width: max-content;
+
+}
+#letreiro-container>div>.letreiro p{
+  white-space: nowrap;
   color: white;
-  font-size: bold;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+@keyframes spin{
+  from {translate:0;}
+  to {translate:-100%;}
 }
 
 .carrossel-container {
