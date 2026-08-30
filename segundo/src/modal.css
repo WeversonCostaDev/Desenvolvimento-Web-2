@@ -3,28 +3,26 @@
 }
 
 .modal{
-    position: fixed;
-    inset: 0;
-    border: 1px solid red;
-    pointer-events: none;
-    opacity: 0;
+    display: none;
 }
 
 .modal:target{
-    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    pointer-events: auto;
-    
+    background: #0000ff;
+    position: fixed;
+    inset:  0;
 }
 
-.fechar{
+.modal:target img{
+    width: 700px;
+    max-width: 80%;
+    z-index: 5;
+}
+
+.modal:target a{
     position: absolute;
     inset: 0;
-}
-
-.modal img{
-    width: 30%;
+    background: black;
 }
