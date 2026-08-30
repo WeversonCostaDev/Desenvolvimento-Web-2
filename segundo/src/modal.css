@@ -1,0 +1,30 @@
+.borda{
+    border: 1px solid yellow;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    border: 1px solid red;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal:target{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    pointer-events: auto;
+    
+}
+
+.fechar{
+    position: absolute;
+    inset: 0;
+}
+
+.modal img{
+    width: 30%;
+}
