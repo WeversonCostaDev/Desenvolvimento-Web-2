@@ -1,0 +1,87 @@
+/* Configuração exclusiva da página sobre.html */
+
+.conteudo-sobre{
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.linha-editorial{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.conteudo-sobre hr{
+  display: none;
+}
+.card-linha-editorial h2{
+  color: rgb(229, 4, 4);
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.card-linha-editorial>p{
+  line-height: 1.6;
+}
+.card-linha-editorial>h3{
+  color: #fff;
+  font-size: 1.9em;
+}
+
+.card-linha-editorial h2{
+  color: rgb(229, 4, 4);
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.card-linha-editorial h1{
+  color: white;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+.card-linha-editorial img{
+  display: block;
+}
+.branco{color:#fff}
+
+#marca-destaque{
+  padding: 10px 20px;
+  background-color:  rgb(229, 4, 4);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.link{
+  color:  rgb(229, 4, 4);
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media(max-width:768px){
+  .linha-editorial{
+    flex-direction: column;
+  }
+  .conteudo-sobre hr{
+    display: block;
+  }
+  .conteudo-sobre{
+    padding: 15px;
+  }
+
+  .card-linha-editorial h2{
+    font-size: 1em;
+  }
+  .card-linha-editorial h1{
+    font-size: 1.3em;
+  }
+}
+
+.conteudo-sobre hr{
+  border:none;
+  border-top: 1px solid #888888;
+}

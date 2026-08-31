@@ -1,0 +1,100 @@
+
+/* Configurações da sessão de mimo da página principal*/
+
+.mimo-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "mimo-1 mimo-2 mimo-3"
+    "mimo-1 mimo-4 mimo-5";
+}
+
+.mimo-container::-webkit-scrollbar {
+  display: none;
+}
+
+.mimo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#mimo-1 {
+  background-color: yellowgreen;
+  grid-area: mimo-1;
+}
+
+#mimo-2 {
+  background-color: darkkhaki;
+  grid-area: mimo-2;
+}
+
+#mimo-3 {
+  background-color: aquamarine;
+  grid-area: mimo-3
+}
+
+#mimo-4 {
+  background-color: aliceblue;
+  grid-area: mimo-4;
+}
+
+#mimo-5 {
+  background-color: bisque;
+  grid-area: mimo-5;
+}
+
+.mimo-nav {
+  display: none;
+}
+
+#mimo-6 {
+  display: none;
+}
+
+
+@media(max-width: 990px) {
+  .mimo-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .mimo-container>div {
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+
+  }
+
+  .mimo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+  }
+
+  .mimo-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+
+  }
+
+  #mimo-6 {
+    display: block;
+  }
+
+}
+
+@media(max-width:430px){
+  .mimo-nav{
+    display: none;
+  }
+}

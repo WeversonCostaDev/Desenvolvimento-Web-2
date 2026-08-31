@@ -1,0 +1,109 @@
+
+/*Configurações gerais do header*/
+
+#header div#faixa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+
+}
+
+#header div>form {
+  display: flex;
+  flex: 1 1 500px;
+  max-width: 600px;
+  margin: 10px;
+  padding: 5px 20px;
+}
+
+#header div>form>input {
+  flex: 1 1 auto;
+  border-radius: 10px;
+  min-height: 40px;
+  padding-left: 20px;
+  font-size: 1em;
+  border: none;
+}
+
+#header div>form>button {
+  flex: 0 0 50px;
+  width: 50px;
+  background: none;
+  border: none;
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav.menu a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .8em;
+  color: #fff;
+  text-transform: uppercase;
+  transition: text-shadow 0.2s ease;
+}
+
+nav.menu a:hover {
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+}
+
+nav.menu a.destaque {
+  color: rgb(255, 210, 29);
+}
+
+/* Letreiro animado */
+
+#letreiro-container{
+  background: rgb(180, 4, 4);
+}
+
+#letreiro-container>div{
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-y:auto;
+
+}
+@media (max-width: 400px) {
+  #letreiro-container > div {
+    width: 200px;
+  }
+}
+
+#letreiro-container>div::-webkit-scrollbar{
+  display: none;
+}
+
+#letreiro-container>div .letreiro{
+  display: flex;
+  flex-wrap: nowrap;
+  animation: spin 10s infinite linear;
+  width: max-content;
+
+}
+#letreiro-container>div>.letreiro p{
+  white-space: nowrap;
+  color: white;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+@keyframes spin{
+  from {translate:0;}
+  to {translate:-100%;}
+}

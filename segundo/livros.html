@@ -6,8 +6,11 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./src/style.css">
-  <link rel="stylesheet" href="./src/modal.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/modal.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link rel="stylesheet" href="./src/css/card.css">
 
   <title>segundo</title>
 </head>
@@ -38,7 +41,7 @@
 
       <div id="faixa">
         <a href="index.html">
-          <img src="/img/darkside-logo.svg" alt="darkside-logo">
+          <img src="/img/logo/darkside-logo.svg" alt="darkside-logo">
         </a>
         <form action="">
           <input type="search" placeholder="Títulos, Autores, Gêneros e Linhas editoriais">
@@ -51,7 +54,7 @@
 
       <nav class="menu">
 
-        <a href="">Livros</a>
+        <a href="livros.html">Livros</a>
         <a href="">Marcas</a>
         <a href="">DarkPaper</a>
         <a class="destaque" href="">Promoções</a>
@@ -59,31 +62,72 @@
         <a href="">Box e Coleções</a>
         <a href="">Raridades</a>
         <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+        <a href="">Contato</a>
 
       </nav>
 
     </header>
 
     <main id="main">
-      
+        
       <div class="conteudo-principal">
-        <figure>
-          <a href="#Bookmark">
-            <img src="/img/o-jardim-da-bruxa-natural-mobile.webp" width="20%" alt="">
-            <figcaption>O jardim da bruxa natural</figcaption>
-          </a>
-        </figure>
-
-        <div>
-          <div id="Bookmark" class="modal">
-            <a href="#" class="fechar"></a>
-              <img src="/img/o-jardim-da-bruxa-natural-mobile.webp" alt="">
-            
-          </div>
+        <h1 class="titulo">Pré-venda</h1>
+        <div class="card-container">
+          <figure class="card">
+            <a href="#Bookmark">
+              <img src="/img/mini-capas/shigahime_vol3_MINI_capa.png" alt="">
+              <figcaption>Shigahime vol.3</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a href="#Bookmark2">
+              <img src="/img/mini-capas/akira_loja_MINI_capa.png" alt="">
+              <figcaption>Akira</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a href="#Bookmark3">
+              <img src="/img/mini-capas/o_coletivo_MINI_capa.png" alt="">
+              <figcaption>O coletivo</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a href="#Bookmark4">
+              <img src="/img/mini-capas/o_poder_do_ritual_MINI_capa.png" alt="">
+              <figcaption>O poder do ritual</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a href="#Bookmark5">
+              <img src="/img/mini-capas/labirinto_do_fauno_MINI_capa.png" alt="">
+              <figcaption>O poder do ritual</figcaption>
+            </a>
+          </figure>
         </div>
 
-      </div>
+        <div id="Bookmark" class="modal">
+          <a href="#" class="fechar"></a>
+            <img src="/img/capas/shigahime_vol3_loja_1.webp" alt="">
+        </div>
+        
+        <div id="Bookmark2" class="modal">
+          <a href="#" class="fechar"></a>
+            <img src="/img/capas/akira_loja_1.webp" alt="">
+        </div>
+      
+        <div id="Bookmark3" class="modal">
+          <a href="#" class="fechar"></a>
+            <img src="/img/capas/o_coletivo_loja_1.webp" alt="">
+        </div>
+        <div id="Bookmark4" class="modal">
+          <a href="#" class="fechar"></a>
+            <img src="/img/capas/o_poder_do_ritual_loja_1.webp" alt="">
+        </div>
+        <div id="Bookmark5" class="modal">
+          <a href="#" class="fechar"></a>
+            <img src="/img/capas/labirinto_do_fauno_loja_1.webp" alt="">
+        </div>
+    </div>
 
     </main>
     <footer id="footer">
