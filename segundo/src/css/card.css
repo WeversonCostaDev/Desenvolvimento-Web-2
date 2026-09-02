@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: 10px;
   width: 215px;
-  border: 1px solid rgb(180, 4, 4);
+  border: 1px solid var(--vermelho);
   padding-bottom: 5px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin: 0;
@@ -38,18 +38,18 @@
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 15px rgb(180, 4, 4);
+        box-shadow: 0 0 15px var(--vermelho);
     }
 }
 
 .card a {
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: var(--branco);
 }
 
 .card div#autor {
-  color: #888888;
+  color: var(--cinza-claro);
   font-size: 0.8em;
 }
 .card:active {

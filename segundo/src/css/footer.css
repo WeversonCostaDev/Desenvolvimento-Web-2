@@ -1,7 +1,7 @@
 
 #footer ul {
   list-style: none;
-  color: #888888;
+  color: var(--cinza-claro);
   gap: 10px;
   font-size: 0.9em;
   padding: 0px;
@@ -19,15 +19,15 @@
 
 div.listas-rodape a{
   text-decoration: none;
-  color: #888888;
+  color: var(--cinza-claro);
 }
 div.listas-rodape a:hover{
-  color:rgb(180, 4, 4);
+  color: var(--vermelho);
 }
 
 #footer>hr {
   border: none;
-  border-top: 1px solid rgb(26, 23, 23);
+  border-top: 1px solid var(--cinza-negro);
 }
 
 @media(max-width:990px) {

@@ -23,27 +23,22 @@
 }
 
 #mimo-1 {
-  background-color: yellowgreen;
   grid-area: mimo-1;
 }
 
 #mimo-2 {
-  background-color: darkkhaki;
   grid-area: mimo-2;
 }
 
 #mimo-3 {
-  background-color: aquamarine;
   grid-area: mimo-3
 }
 
 #mimo-4 {
-  background-color: aliceblue;
   grid-area: mimo-4;
 }
 
 #mimo-5 {
-  background-color: bisque;
   grid-area: mimo-5;
 }
 

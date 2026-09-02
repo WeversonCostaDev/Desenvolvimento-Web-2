@@ -49,26 +49,26 @@ nav.menu a {
   text-decoration: none;
   font-weight: bold;
   font-size: .8em;
-  color: #fff;
+  color: var(--branco);
   text-transform: uppercase;
   transition: text-shadow 0.2s ease;
 }
 
 nav.menu a:hover {
   text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff;
+    0 0 5px var(--branco),
+    0 0 10px var(--branco),
+    0 0 20px var(--branco);
 }
 
 nav.menu a.destaque {
-  color: rgb(255, 210, 29);
+  color: var(--amarelo-destaque);
 }
 
 /* Letreiro animado */
 
 #letreiro-container{
-  background: rgb(180, 4, 4);
+  background: var(--vermelho);
 }
 
 #letreiro-container>div{
@@ -98,7 +98,7 @@ nav.menu a.destaque {
 }
 #letreiro-container>div>.letreiro p{
   white-space: nowrap;
-  color: white;
+  color: var(--branco);
   font-weight: bold;
   padding-right: 1em;
 }

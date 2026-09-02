@@ -16,7 +16,7 @@
   display: none;
 }
 .card-linha-editorial h2{
-  color: rgb(229, 4, 4);
+  color: var(--vermelho);
   font-size: 1.8em;
   text-transform: uppercase;
 }
@@ -25,18 +25,18 @@
   line-height: 1.6;
 }
 .card-linha-editorial>h3{
-  color: #fff;
+  color: var(--branco);
   font-size: 1.9em;
 }
 
 .card-linha-editorial h2{
-  color: rgb(229, 4, 4);
+  color: var(--vermelho);
   font-size: 1.8em;
   text-transform: uppercase;
 }
 
 .card-linha-editorial h1{
-  color: white;
+  color: var( --branco);
   font-size: 2.3em;
   text-transform: uppercase;
 }
@@ -44,19 +44,19 @@
 .card-linha-editorial img{
   display: block;
 }
-.branco{color:#fff}
+.branco{color:var(--branco)}
 
 #marca-destaque{
   padding: 10px 20px;
-  background-color:  rgb(229, 4, 4);
-  color: #fff;
+  background-color:  var(--vermelho);
+  color: var(--branco);
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bold;
 }
 
 .link{
-  color:  rgb(229, 4, 4);
+  color:  var(--vermelho);
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
@@ -83,5 +83,5 @@
 
 .conteudo-sobre hr{
   border:none;
-  border-top: 1px solid #888888;
+  border-top: 1px solid var(--cinza-claro);
 }

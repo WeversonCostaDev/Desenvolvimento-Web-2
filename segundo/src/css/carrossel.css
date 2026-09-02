@@ -52,7 +52,7 @@
   height: .2rem;
   opacity: .75;
   transition: opacity ease 250ms;
-  background-color: #fff;
+  background-color: var(--branco);
 }
 
 .slider-nav a:hover {
